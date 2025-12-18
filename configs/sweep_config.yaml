@@ -1,0 +1,22 @@
+program: scripts/sweep.py
+method: bayes
+metric:
+  name: metrics/mAP50(B)
+  goal: maximize
+parameters:
+  # PRIMARY: Reduce cls weight (your main issue)
+  cls:
+    values: [0.3, 0.5, 0.6]
+  
+  # SECONDARY: Fine-tune learning rate around your baseline
+  lr0:
+    min: 0.003
+    max: 0.008
+  
+  # TERTIARY: Test augmentation impact on precision
+  mixup:
+    values: [0.0, 0.05]
+  
+  # Keep other augmentation reasonable
+  hsv_s:
+    values: [0.6, 0.7]

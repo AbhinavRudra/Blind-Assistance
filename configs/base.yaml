@@ -1,0 +1,76 @@
+# Core
+epochs: 300
+imgsz: 640
+
+# Loss tuning for accuracy
+box: 7.5
+cls: 0.7
+dfl: 1.5
+
+# Learning rate
+lr0: 0.005
+lrf: 0.01
+warmup_epochs: 3
+
+# Augmentation
+mosaic: 1.0
+mixup: 0.1
+degrees: 10
+scale: 0.5
+
+# Validation
+conf: 0.001
+iou: 0.7
+
+# Task and Mode
+task: detect
+mode: train
+name: blind1
+exist_ok: False
+
+# Core Training Parameters
+device: 0
+workers: 16
+cache: 'disk'
+save: True
+resume: False
+pretrained: True
+rect: False
+single_cls: False
+amp: True
+
+# Optimizer & Scheduler
+optimizer: AdamW
+momentum: 0.9
+weight_decay: 0.001
+cos_lr: True
+patience: 30
+
+# Loss Function
+label_smoothing: 0.0
+
+# Color Augmentation
+hsv_h: 0.015
+hsv_s: 0.7
+hsv_v: 0.4
+
+# Logging & Monitoring
+save_period: 10
+verbose: True
+plots: True
+visualize: False
+show_labels: True
+show_conf: True
+
+# Evaluation & Validation
+val: True
+save_json: False
+max_det: 300
+half: True
+
+# Advanced Features
+multi_scale: False
+deterministic: True
+freeze: 0
+dropout: 0.0
+overlap_mask: True
