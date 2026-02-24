@@ -1,0 +1,36 @@
+{
+  "os": "Linux-6.17.4-76061704-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.10.12",
+  "startedAt": "2025-11-23T16:38:24.620236Z",
+  "program": "/home/rudra/Documents/projects/3.Fun/speedCam/chinku_ol/train.py",
+  "codePath": "train.py",
+  "codePathLocal": "train.py",
+  "email": "m.abhinav.professional@gmail.com",
+  "root": "/home/rudra/Documents/projects/3.Fun/speedCam/chinku_ol",
+  "host": "pop-os",
+  "executable": "/home/rudra/Documents/projects/3.Fun/speedCam/cam/bin/python3",
+  "cpu_count": 14,
+  "cpu_count_logical": 20,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "164021395456",
+      "used": "132873056256"
+    }
+  },
+  "memory": {
+    "total": "24887353344"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "memoryTotal": "8585740288",
+      "cudaCores": 3072,
+      "architecture": "Ada",
+      "uuid": "GPU-7d2ff560-4c12-a12a-92f7-93b6e22e2ba5"
+    }
+  ],
+  "cudaVersion": "13.0",
+  "writerId": "1eda8xi2rasduqxxqqywlufyw0g8jh7r"
+}
